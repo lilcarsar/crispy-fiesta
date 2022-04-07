@@ -27,9 +27,11 @@ public class MyFile2 {
 		}
 		else {
 
+			do {
 				textFile.createNewFile();
 				System.out.println("New file has been created");
-		
+			}
+			
 			
 		}
 	}
