@@ -12,7 +12,7 @@ Course: Computer Programming 30
 */
 package disk; //declares package
 import java.util.Scanner; //Imports a scanner to allow typing in system
-
+ 
 
 public class Hockey extends Puck{ //creates a public class that inherits Puck
 

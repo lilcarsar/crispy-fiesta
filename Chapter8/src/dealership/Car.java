@@ -10,8 +10,8 @@ Course: Computer Programming 30
  
 
 */
-
-package dealership;
+//
+package dealership; 
 
 public  class Car extends Vehicle{
 
