@@ -1,0 +1,48 @@
+﻿Chapter 8 CRT
+Carter Sarney
+
+
+1. Explain the difference between a has-a and a is-a relationship
+An is-a relationship is required with inheriting a class, when the code is extended from other code within the project. A has-a relationship usually is using new variables and not using inherited code.
+
+
+2. If a base class has a public method go() and a derived class has a public method stop(), which methods will be available to an object of the class?
+        Both of these methods will be available to the object.
+
+
+3. Compare and contrast implementing an abstract method to overriding a method.
+        When overriding a method that’s abstract the method that is overriding has to be      abstract as well. When the parent class is abstract the inherited class does not have to be abstract though.
+
+
+4. Compare and contrast an abstract class to an interface.
+An interface would be when the code is implemented from other methods, while abstract classes extend from another method. Interfaces can only have static and final variables, while abstract can have all types.
+
+
+      6)   
+1. What type of method is doThat() in Wo?
+A private integer.
+
+2. What is Wo?
+        An interface
+        
+3. Why is doThat() implemented in Roo?
+        Because it’s an interface and Roo implements Wo.
+        
+4. List the methods available to a Roo object.
+doNow(), doThis(), doThat()
+
+
+5. How does the implementation of doThis() in Roo affect the implementation of doThis() in Bo?
+doThis() will return 10 instead of 2 because Roo overrides Bo
+
+
+6. What action does the statement super(1) in Roo perform?
+It makes z = 1 in public Bo.
+
+
+7. Can the doThis() method in Bo be called from a Roo object? If so, how?
+Yes it can through using it through a super.
+
+
+8. Can a method in Roo call the doThis() method in Bo? If so, how?
+Yes it can through using it through a super.
