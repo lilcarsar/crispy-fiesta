@@ -1,0 +1,10 @@
+package statistics;
+
+public class Stats1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
