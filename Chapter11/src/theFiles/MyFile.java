@@ -25,15 +25,25 @@ public class MyFile {
 		
 		File textFile = new File(ans); //Creates a file called textFile which is a new file that is the users input
 		
+		
+	
 		if (textFile.exists()) { //If the textFile exists then it will do the below
 			System.out.println("The file already exists"); //Prints to the user "the file already exists"
 		}
 		else {
 			System.out.println("The file does not exist"); //Prints to the user "The file already exists"
 		}
-	}
+		
+		
 
+		
+	}
 }
+
+	
+	
+
+
 
 
 /*
