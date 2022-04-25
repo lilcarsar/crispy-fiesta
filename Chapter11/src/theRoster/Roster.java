@@ -8,18 +8,31 @@ public class Roster {
 
 	public static void main(String[] args) {
 		
-		File dataFile = new File("StuRoster.txt");
 		
-		FileWriter out;
-		BufferedWriter writeFile;
 		Scanner input = new Scanner(System.in);
-		String Names;
+		File Names;
+		String fileName; 
+		int numb;
+		String first;
+		String last;
 		
-		try {
-			out = new FileWriter(dataFile);
-			writeFile = new BufferedWriter(out);
+		System.out.print("Enter the name of the test file: ");
+		fileName = input.nextLine();
+		Names = new File(fileName);
+		
+		System.out.println("How many students do you have? ");
+		numb = input.nextInt();
+		
+		for(int i = 0, i < numb, i++) {
+			System.out.println("What is the student's first name? ");
+			first = input.next();
+			
+			System.out.println("What is the student's last name? ");
+			last = input.next();
+			
+			writeFile.writeObject(new StuName(first, last));
 		}
-
+		
 	}
 
 }
