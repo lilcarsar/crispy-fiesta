@@ -22,9 +22,18 @@ public class Stats1 {
 
 	public static void main(String[] args) {
 		
+		
+		/*
+		 Creates all file related variables allowing me to use them
+		 */
 		File answers;
 		FileReader in;
 		BufferedReader readFile;
+		
+		
+		/*
+		 Creates all my strings, integers, and doubles
+		 */
 		String score;
 		double avgScore;
 		String line;
@@ -34,50 +43,76 @@ public class Stats1 {
 		double high = 0;
 		double skill = 0;
 
-		
+		/*
+		 Creates two arraylists one for student names and the other for student grades
+		 */
 		ArrayList<String> stuName = new ArrayList<String>();
 		ArrayList<String> stuGrades = new ArrayList<String>();
 		
+		
+		//The variable answers is assigned to a file with names and grades in it already
 		answers = new File("../Chapter11/src/statistics/test1.txt");
 		
 		
 		try {
+			
+			/*
+			 Read the file
+			 */
 			in = new FileReader(answers);
 			readFile = new BufferedReader(in);
 
+			/*
+			 While the line has text on it, it adds the first line to the student name array and the second line to the second array and it's stores in "line"
+			 */
 			while((line = readFile.readLine()) != null) {
 				
 				stuName.add(line);
 				System.out.println(line);
-				
-				
 				line = readFile.readLine();
 				System.out.println(line);
 				stuGrades.add(line);
 				
+				
+				/*
+				 the students grade is stored in skill
+				 */
 				skill = Double.parseDouble(line);
 				totalScores += Double.parseDouble(line);
-				
 				numScores += 1;
 				
-				
+				/*
+				 When the skill is greater than high, high is assigned to skill
+				 */
 				if(skill > high) {
 					high = skill;
 				}
+				
+				/*
+				 When the skill is less than low, low is assigned to skill
+				 */
 				if(skill < low) {
 					low = skill;
 				}
 			}
+			
+			//Averages the scores by taking all the scores together and divides the total points by 500
 			avgScore = totalScores / numScores;
+			
+			/*
+			 Prints the lowest, highest, and the average grades of the class
+			 */
 			System.out.println("Lowest grade = " + low );
 			System.out.println("highest grade = " + high);
 			System.out.println("Average = " + avgScore);
 			
-			readFile.close();
+			readFile.close(); //Stops reading the file
 			in.close();
 			
 			
-			
+		/*
+		 Allows errors to be in the code and gives you error messages
+		 */
 		}catch (FileNotFoundException e) {
 			System.out.println("File does not exist or could not be found.");
 			System.err.println("FileNotFoundException: " + e.getMessage());
