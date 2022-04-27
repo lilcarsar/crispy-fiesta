@@ -24,7 +24,7 @@ public class Stats1 {
 		
 		
 		/*
-		 Creates all file related variables allowing me to use them
+		 Creates all file related variables allowing them to be used
 		 */
 		File answers;
 		FileReader in;
@@ -32,7 +32,7 @@ public class Stats1 {
 		
 		
 		/*
-		 Creates all my strings, integers, and doubles
+		 Creates all the strings, integers, and doubles
 		 */
 		String score;
 		double avgScore;
@@ -104,7 +104,7 @@ public class Stats1 {
 			 */
 			System.out.println("Lowest grade = " + low );
 			System.out.println("highest grade = " + high);
-			System.out.println("Average = " + avgScore);
+			System.out.println("Average grade = " + avgScore);
 			
 			readFile.close(); //Stops reading the file
 			in.close();
@@ -142,7 +142,7 @@ Eli Baerg
 64
 Lowest grade = 64.0
 highest grade = 100.0
-Average = 84.6
+Average grade = 84.6
 
 
 */

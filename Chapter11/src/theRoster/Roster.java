@@ -33,18 +33,30 @@ public class Roster {
 		String first;
 		String last;
 		
+		
+		/*
+		 Prompts user for test file name then creates a file with the same name
+		 */
 		System.out.print("Enter the name of the test file: ");
 		fileName = input.nextLine();
 		Names = new File(fileName);
 		
+		//Prompts user for number of students and stores the number
 		System.out.println("How many students do you have? ");
 		numb = input.nextInt();
 		
+		
+		
 		try { 
+			//Allows an output that can write to a file, and allows OOP to be included in the code 
 			FileOutputStream out = new FileOutputStream(fileName);
 			ObjectOutputStream StuName = new ObjectOutputStream(out);
 		
+			
 		for(int i = 0; i < numb; i++) {
+			/*
+			 Prompts user for first and last name, stores them, and creates an object of the students
+			 */
 			System.out.println("What is the student's first name? ");
 			first = input.next();
 			
@@ -53,14 +65,17 @@ public class Roster {
 			
 			StuName.writeObject(new StuName(first, last));
 		}
+		//Closes the stream
 		StuName.close();
 		
-		
+		//Reads the file and helps rebuild broken data
 		FileInputStream in = new FileInputStream(fileName);
 		ObjectInputStream reading = new ObjectInputStream(in);
 		
+		
 		for(int i = 0; i < numb; i++) {
 			
+			//Prints all of the student's names
 			System.out.println((StuName)reading.readObject());
 		}
 		}
