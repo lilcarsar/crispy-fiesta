@@ -26,7 +26,7 @@ public class Roster {
 		//Imports a scanner
 		Scanner input = new Scanner(System.in);
 		
-		
+		//Imports variables
 		File Names;
 		String fileName; 
 		int numb;
