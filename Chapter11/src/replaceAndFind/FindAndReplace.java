@@ -41,7 +41,7 @@ public class FindAndReplace {
 		replace = input.nextLine();
 		
 		
-		
+		/*
 		try {
 			
 			
@@ -49,6 +49,7 @@ public class FindAndReplace {
 			System.out.println("File does not exist or could not be found.");
 			System.err.println("FileNotFoundException: " + e.getMessage());
 		}
+		*/
 		
 	}
 
