@@ -1,0 +1,23 @@
+﻿Chapter 8 CRT
+Carter Sarney
+
+
+1. Can data in memory be called a file?
+No, the data in memory can not be a file since memory can be lost after a computer restart so it could corrupt/ruin the file, while if the data was stored in the drive it won’t be lost after a restart or whenever the computer RAM is deleted.
+2. Writer the import statement required to access the File Class in an application
+import java.io.*;
+3. Identify the error
+Using only one slash is incorrect, you need to have two slashes in order to properly call upon the file
+4. a) Which statement is used to write an exception handler?
+catch (IOException e)
+b) Write an exception handler to handle an IOException if a specified file name cannot be used to create a file.
+catch (IOException e){
+System.out.println("Problem reading file.");
+System.err.println(“Chosen name can not be used for the file: ” + e.getMessage())
+}
+
+
+5. a) What is the name of the stream for displaying error messages
+err
+b) Where are these messages displayed?
+These messages are displayed to the user through the console
