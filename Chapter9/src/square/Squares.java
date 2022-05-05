@@ -1,3 +1,16 @@
+/*
+
+Program: Squares.java          Last Date of this Revision: May 5, 2022
+
+Purpose: Create a Squares application that stores the square of an element's index in an integer array of 5 elements.
+
+Author: Carter Sarney
+School: CHHS
+Course: Computer Programming 30
+ 
+
+*/
+
 package square;
 
 public class Squares {
