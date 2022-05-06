@@ -88,7 +88,7 @@ public class Stats2 {
 			}
 			//Stops writing the file
 			writeFile.close();
-				out.close();
+			out.close();
 			
 			//Allows file to be read
 			in = new FileReader(dataFile);
