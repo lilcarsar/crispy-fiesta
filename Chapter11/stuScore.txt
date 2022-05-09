@@ -1,8 +1,6 @@
 carter
-96.0
-ali
-100.0
-masen
 87.0
-marcus
-54.0
+ali
+78.0
+masen
+100.0

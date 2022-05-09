@@ -31,6 +31,9 @@ public class Stats1 {
 		BufferedReader readFile;
 		
 		
+		NumberFormat n = NumberFormat.getPercentInstance();
+		
+		
 		/*
 		 Creates all the strings, integers, and doubles
 		 */
@@ -102,7 +105,7 @@ public class Stats1 {
 			/*
 			 Prints the lowest, highest, and the average grades of the class
 			 */
-			System.out.println("Lowest grade = " + low );
+			System.out.println("Lowest grade = " + n.format(low/100) );
 			System.out.println("highest grade = " + high);
 			System.out.println("Average grade = " + avgScore);
 			
