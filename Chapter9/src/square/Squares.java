@@ -23,10 +23,12 @@ public class Squares {
 		
 		int numElements = num.length;
 		
+		//Creates a for loop that repeats five times since thats how many numbers are in the array
 		for( int i = 0; i < num.length; i++) {
+			//Multiplies the numbers by themselves
 			num[i] = num[i] * num[i];
 		}
-		
+		//Prints out the square of all the numbers
 		System.out.println(num[0] + " " + num[1] + " "+ num[2] + " " + num[3] + " " + num[4]);
 	}
 

@@ -22,7 +22,7 @@ public class FindName {
 	public static void main(String[] args) {
 		
 		
-		//Creates variables
+		//Creates variables 
 		int numb;
 		int place;
 		String look;

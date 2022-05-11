@@ -16,7 +16,7 @@ package nameFinder;
 
 public class Search {
 	
-	/**
+	/** 
 	 * Returns the index of the element nameToFind
 	 * pre: none
 	 * post: index of nameToFind has been returned. -1 has been returned if element not found
