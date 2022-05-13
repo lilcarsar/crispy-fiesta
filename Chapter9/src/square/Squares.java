@@ -37,6 +37,6 @@ public class Squares {
  Screen dump
  
  
- 0 1 4 9 16
+ 0 1 4 9 16 
 
  */

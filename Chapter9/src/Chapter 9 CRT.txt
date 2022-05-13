@@ -1,0 +1,70 @@
+﻿Chapter 9 CRT
+Carter Sarney
+
+
+1. 
+
+The index value of the third element in an array is 2.
+
+
+2. 
+
+int quantities[] = new int [19]
+
+
+3. 
+
+double heights[] = {1.65, 2.15, 4.95}
+
+
+4. 
+
+for (int  integer: grades)
+{
+System.out.println(integer);
+}
+
+
+
+
+5.
+
+ a)
+ 
+Int data = 4;
+Int[] tester = new int[4]
+for (int i = 0; i < 4; i++) {
+tester[i] = tester[i] +1;
+}
+tester[0] = data;
+
+
+b) 
+
+
+Int data = 4;
+Int[] tester = new int[4]
+for (int i = 0; i < 4; i++) {
+tester[i] = tester[i + 1];
+}
+tester[0] = data;
+
+
+
+
+6. 
+When passing the whole array you have to write it with curly brackets ( { } ) to indicate that there is more than one item. When you pass the whole array you have to separate the different items using a comma. 
+In a single element array you only have to use the square brackets ( [ ] ) which would count all the numbers below the given number down to zero.
+
+
+
+
+7. 
+
+Sometimes when needing an array you need a very high number and not all the items in the array before that high number. So you would take the high, subtract the low then add 1. 
+This method essentially makes the number you want to start from in the array, the start of the array.
+
+
+8. 
+
+It will output the i from Elaine.

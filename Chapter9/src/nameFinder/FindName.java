@@ -55,7 +55,7 @@ public class FindName {
 			}
 			else {
 				System.out.println("First occurance is element " + place);
-			}
+			} 
 	}
 
 }
