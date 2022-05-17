@@ -18,7 +18,7 @@ public class CalculateWeight2 {
 	        while(true){
 
 	            //Calculate Weight (kg)
-	            double weight = 10167.255 * (scale.getVoltageRatio() - offsetValue);
+	            double weight = 52710.525 * (scale.getVoltageRatio() - offsetValue);
 	            
 	            //Display Weight
 	            System.out.println(String.format("%.3f lbs", weight));      
