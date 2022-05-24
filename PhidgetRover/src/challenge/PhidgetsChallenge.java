@@ -26,12 +26,80 @@ public class PhidgetsChallenge {
 	      rightMotors.setTargetVelocity(-1);
 	      
 	      
-	      Thread.sleep(1750);
+	      Thread.sleep(1650);
+	      
+	      leftMotors.setTargetVelocity(0);
+	      rightMotors.setTargetVelocity(0);
+	      
+	      Thread.sleep(1000);
+	      
 	      
 	      leftMotors.setTargetVelocity(-1);
 	      rightMotors.setTargetVelocity(1);
 	      
-	      Thread.sleep(375);
+	      
+	      Thread.sleep(600);
+	      
+	      leftMotors.setTargetVelocity(0);
+	      rightMotors.setTargetVelocity(0);
+	      
+	      Thread.sleep(1000);
+	      
+	      leftMotors.setTargetVelocity(-1);
+	      rightMotors.setTargetVelocity(-1);
+	      
+	      Thread.sleep(1650);
+	      
+	      leftMotors.setTargetVelocity(0);
+	      rightMotors.setTargetVelocity(0);
+	      
+	      
+	      Thread.sleep(1000);
+	      
+	      leftMotors.setTargetVelocity(-1);
+	      rightMotors.setTargetVelocity(1);
+	      
+	      Thread.sleep(600);
+	      
+	      leftMotors.setTargetVelocity(0);
+	      rightMotors.setTargetVelocity(0);
+	      
+	      Thread.sleep(1000);
+	      
+	      
+	      leftMotors.setTargetVelocity(-1);
+	      rightMotors.setTargetVelocity(-1);
+	      
+	      
+	      Thread.sleep(1650);
+	      
+	      leftMotors.setTargetVelocity(0);
+	      rightMotors.setTargetVelocity(0);
+	      
+	      Thread.sleep(1000);
+	      
+	      leftMotors.setTargetVelocity(-1);
+	      rightMotors.setTargetVelocity(1);
+	      
+	      Thread.sleep(600);
+	      
+	      
+	      leftMotors.setTargetVelocity(0);
+	      rightMotors.setTargetVelocity(0);
+	      
+	      Thread.sleep(1000);
+	      
+	      
+	      leftMotors.setTargetVelocity(-1);
+	      rightMotors.setTargetVelocity(-1);
+	      
+	      
+	      Thread.sleep(1725);
+	      
+	      leftMotors.setTargetVelocity(0);
+	      rightMotors.setTargetVelocity(0);
+	      
+	      
 	      
 	}
 
