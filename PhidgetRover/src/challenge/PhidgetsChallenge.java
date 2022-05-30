@@ -5,6 +5,9 @@ import com.phidget22.*;
 
 public class PhidgetsChallenge {
 
+	
+	
+	
 	public static void main(String[] args) throws Exception {
 		
 		
@@ -38,7 +41,7 @@ public class PhidgetsChallenge {
               
              
               
-           /*   leftMotors.setTargetVelocity(-1);
+              leftMotors.setTargetVelocity(-1);
               rightMotors.setTargetVelocity(1);
               
               Thread.sleep(750);
@@ -52,7 +55,7 @@ public class PhidgetsChallenge {
               rightMotors.setTargetVelocity(-1);
               
               Thread.sleep(2000);
-              */
+              
               
           } else { 
 	      
