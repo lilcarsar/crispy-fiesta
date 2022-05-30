@@ -69,8 +69,8 @@ double rightMotorsSpeed = verticalAxis - horizontalAxis;
 
 verticalAxis	horizontalAxis	leftMotorsSpeed	rightMotorsSpeed	Result
 1.0	               0.0	             1.0	          1.0	        Move Forward
--1.0	           0.0
-0.0                1.0
-0.0               -1.0
+-1.0	           0.0              -1.0             -1.0           Move Backward
+0.0                1.0               1.0              1.0           Move Right
+0.0               -1.0              -1.0             -1.0           Move Left
 
  */
