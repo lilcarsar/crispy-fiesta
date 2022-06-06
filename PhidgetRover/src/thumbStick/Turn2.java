@@ -1,10 +1,7 @@
 package thumbStick;
 
-
-//Add Phidgets Library
 import com.phidget22.*;
-
-public class Turn1 {
+public class Turn2 {
   public static void main(String[] args) throws Exception{
 
       //Connect to wireless rover
@@ -15,26 +12,33 @@ public class Turn1 {
       DCMotor rightMotors = new DCMotor();
       VoltageRatioInput vAxis = new VoltageRatioInput(); 
       VoltageRatioInput hAxis = new VoltageRatioInput(); 
-      
+
       //Address
       leftMotors.setChannel(0);
       rightMotors.setChannel(1);
       vAxis.setChannel(0);
       hAxis.setChannel(1);
-
+      DistanceSensor sonar = new DistanceSensor();
       //Open
       leftMotors.open(5000);
       rightMotors.open(5000);
       vAxis.open(5000);
       hAxis.open(5000);
-
+      sonar.open(5000);
+      sonar.setDataInterval(100);
       //Increase acceleration 
       leftMotors.setAcceleration(leftMotors.getMaxAcceleration());
       rightMotors.setAcceleration(rightMotors.getMaxAcceleration());
 
       //Use your Phidgets
       while(true){
-
+    	  System.out.println("Distance: " + sonar.getDistance() + " mm");
+          
+          if (sonar.getDistance() < 200) {
+              //Object detected! Stop motors
+              leftMotors.setTargetVelocity(0);
+              rightMotors.setTargetVelocity(0);
+          } else {
           //Get data from vertical and horizontal axis (values between -1 and 1)
           double verticalAxis = vAxis.getVoltageRatio();
           double horizontalAxis = hAxis.getVoltageRatio();
@@ -58,19 +62,4 @@ public class Turn1 {
       }
   }
 }
-
-
-
-/*
-
-double leftMotorsSpeed = verticalAxis + horizontalAxis;
-double rightMotorsSpeed = verticalAxis - horizontalAxis;
-
-
-verticalAxis	horizontalAxis	leftMotorsSpeed	rightMotorsSpeed	Result
-1.0	               0.0	             1.0	          1.0	        Move Forward
--1.0	           0.0              -1.0             -1.0           Move Backward
-0.0                1.0               1.0              1.0           Move Right
-0.0               -1.0              -1.0             -1.0           Move Left
-
- */
+}

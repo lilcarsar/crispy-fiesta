@@ -25,7 +25,7 @@ public class PhidgetsChallenge {
 	      leftMotors.open(5000);
 	      rightMotors.open(5000);
 	      DistanceSensor sonar = new DistanceSensor();
-	      
+	       
 	      
 	      sonar.open(5000);
 	      while (true) {
