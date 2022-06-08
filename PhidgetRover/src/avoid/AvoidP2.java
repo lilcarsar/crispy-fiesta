@@ -46,8 +46,8 @@ public class AvoidP2 {
               
               Thread.sleep(500);
               
-              leftMotors.setTargetVelocity(1);
-              rightMotors.setTargetVelocity(1);
+              leftMotors.setTargetVelocity(-0.25);
+              rightMotors.setTargetVelocity(-0.25);
               
               Thread.sleep(2000);
               
